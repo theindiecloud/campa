@@ -1,0 +1,103 @@
+/* Campa Design Tokens */
+:root {
+  /* Surfaces & Canvas */
+  --bg-primary: #E2E6EA;
+  --bg-surface: #EDF1F5;
+  --bg-subtle: #D8DFE6;
+  --bg-card: #FFFFFF;
+  --bg-pill: #FEECEE;
+
+  /* Medical Brand Red & Gradients */
+  --brand-red: #DC2626;
+  --brand-red-deep: #B91C1C;
+  --brand-red-hover: #991B1B;
+  --brand-red-dark: #7F1D1D;
+  --brand-red-soft: rgba(185, 28, 28, 0.14);
+  --brand-red-glow: rgba(185, 28, 28, 0.35);
+  --gradient-brand-red: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+  --gradient-badge-red: linear-gradient(135deg, #A81818 0%, #801212 100%);
+
+  /* Neutrals & Text */
+  --text-main: #050B14;
+  --text-heading: #030712;
+  --text-muted: #4B5563;
+  --text-subtle: #64748B;
+  --border-light: #CBD5E1;
+  --border-subtle: rgba(5, 11, 20, 0.08);
+
+  /* Functional Alert Colors */
+  --emergency: #DC2626;
+  --emergency-soft: #FEE2E2;
+  --success: #16A34A;
+  --success-soft: #DCFCE7;
+  --warning: #F59E0B;
+  --info: #2563EB;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.08), 0 2px 6px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 12px 32px -4px rgba(15, 23, 42, 0.10), 0 4px 12px -2px rgba(15, 23, 42, 0.05);
+  --shadow-card-elevated: 0 12px 36px rgba(15, 23, 42, 0.08);
+  --shadow-button-red: 0 4px 18px rgba(230, 57, 70, 0.35);
+  --shadow-card-hover: 0 18px 46px rgba(185, 28, 28, 0.20);
+
+  /* Border Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: monospace;
+}
+
+/* Animations */
+@keyframes pulseRedGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 24px rgba(230, 57, 70, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(230, 57, 70, 0);
+  }
+}
+
+@keyframes subtlePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.45);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(185, 28, 28, 0);
+    opacity: 0.85;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(185, 28, 28, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes campa-pulse {
+  0% { transform: scale(0.96); }
+  30% { transform: scale(1.06); }
+  45% { transform: scale(0.98); }
+  60% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
